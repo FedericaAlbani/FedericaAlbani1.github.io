@@ -1,0 +1,15 @@
+td{
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+td{
+    display: table-cell;
+    vertical-align: inherit;
+}
+table{
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
