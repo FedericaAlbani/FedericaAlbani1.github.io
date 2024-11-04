@@ -20,6 +20,8 @@ td{
     vertical-align: inherit;
 }
 table{
+    margin: 100px auto;
+    display: table;
     border-collapse: separate;
     text-indent: initial;
     border-spacing: 2px;
