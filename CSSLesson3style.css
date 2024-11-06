@@ -1,6 +1,6 @@
 body {
-    border: 20px #3A9FDB solid; 
-    font-family: 'Montserrat';
+    border: 20px #bdc7cf; 
+    font-family: 'Sans Pro';
   font-style: normal;
   font-weight: 400;
   max-width: 700px; 
@@ -10,11 +10,11 @@ body {
 }
 
 h2 {
-    color: #f699de; 
+    color: #354b63; 
 }
 
 .date { 
-    color: #480a9a;
+    color: #3098dd;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     
