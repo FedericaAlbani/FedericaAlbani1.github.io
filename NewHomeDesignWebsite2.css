@@ -13,8 +13,16 @@ header {
     text-align: center;
 }
 .intro-image { 
-    width: 350px; height: 200px;
-}
+    max-width: 50%; 
+    display: flex;
+     justify-content: center;
+      align-items: center;
+     } 
+     
+     .centered-image { 
+        width: 350px; 
+        height: 200px;
+     }
 
 nav ul {
     list-style: none;
