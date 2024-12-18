@@ -27,9 +27,37 @@
             <h3>Featured Articles</h3>
             <p>Read our latest blog posts and articles on various topics.</p>
         </section>
+        <section class="countdown">
+            <h3>Countdown to Event</h3>
+            <div id="countdown-timer"></div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 My Website. All rights reserved.</p>
     </footer>
+    <script>
+        // JavaScript for Countdown
+        const countdown = () => {
+            const countDate = new Date("Jan 1, 2025 00:00:00").getTime();
+            const now = new Date().getTime();
+            const gap = countDate - now;
+
+            const second = 1000;
+            const minute = second * 60;
+            const hour = minute * 60;
+            const day = hour * 24;
+
+            const textDay = Math.floor(gap / day);
+            const textHour = Math.floor((gap % day) / hour);
+            const textMinute = Math.floor((gap % hour) / minute);
+            const textSecond = Math.floor((gap % minute) / second);
+
+            document.getElementById('countdown-timer').innerHTML =
+                `${textDay}d ${textHour}h ${textMinute}m ${textSecond}s`;
+        };
+
+        setInterval(countdown, 1000);
+    </script>
 </body>
 </html>
+
