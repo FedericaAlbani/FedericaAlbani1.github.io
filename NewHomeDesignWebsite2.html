@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spark & Marmee</title>
+    <title>BFA 2025 Exhibition!</title>
     <link rel="stylesheet" href="NewHomeDesignWebsite2.css">
 </head>
 <body>
@@ -11,21 +11,21 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Artists</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Socialst</a></li>
             </ul>
         </nav>
         <div class="logo">
-            <h1>Spark & Marmee</h1>
+            <h1>BFA 2025 Exhibition!</h1>
         </div>
     </header>
     <section class="intro">
         <div class="intro-text">
-            <h2>We're all about finding your spark!</h2>
-            <p>I'm passionate about helping people rediscover their inner happiness, or as I like to say, find their spark!</p>
-            <p>My name is Marmee and 'Spark & Marmee' is more than just a business name. It's a feeling of intangible happiness that emanates from within.</p>
-            <button class="cta-button">Spark!</button>
+            <h2>WWelcome to our Website!</h2>
+            <p>Here you will find all the artists taking part as well as their works!</p>
+            <p> So please, explore and find us on our socials!</p>
+            <button class="cta-button">Socials!</button>
         </div>
         <div class="intro-image">
             <img src="path/to/image.jpg" alt="Person pointing to themselves">
@@ -67,5 +67,32 @@
         <p>Membership is $25/month and includes a range of resources, events, and weekly guest sparkles! We'd love to see you there!</p>
         <button class="cta-button">Spark!</button>
     </section>
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript for Countdown
+        const countdown = () => {
+            const countDate = new Date("Jun 1, 2025 00:00:00").getTime();
+            const now = new Date().getTime();
+            const gap = countDate - now;
+
+            const second = 1000;
+            const minute = second * 60;
+            const hour = minute * 60;
+            const day = hour * 24;
+
+            const textDay = Math.floor(gap / day);
+            const textHour = Math.floor((gap % day) / hour);
+            const textMinute = Math.floor((gap % hour) / minute);
+            const textSecond = Math.floor((gap % minute) / second);
+
+            document.getElementById('countdown-timer').innerHTML =
+                `${textDay}d ${textHour}h ${textMinute}m ${textSecond}s`;
+        };
+
+        setInterval(countdown, 1000);
+    </script>
 </body>
 </html>
+
